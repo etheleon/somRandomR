@@ -1,3 +1,7 @@
+library(dplyr)
+library(magrittr)
+library(ggplot2)
+
 app = shinyApp(
     ui = fluidPage(
         selectInput("inputId", "your choice", "cyl", selected = NULL, multiple = FALSE, selectize = TRUE, width = NULL, size = NULL),
